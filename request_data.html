@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>Gunakan XMLHttpRequest untuk mengakses data dari server</h2>
+<p>Data ditulus dalam format JSON, sehingga dapat di konversikan menjadi javascript object</p>
+<p id="demo"></p>
+
+<script>
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			var myObj = JSON.parse(this.responseText);
+			document.getElementById("demo").innerHTML = myObj.nama;
+		}
+	};
+	xmlhttp.open("GET","data.txt",true);
+	xmlhttp.send();
+
+</script>
+</body>
+</html>

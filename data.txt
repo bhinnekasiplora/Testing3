@@ -1,0 +1,9 @@
+{
+	"nama" : "Ronaldo",
+	"usia" : 30,
+	"klub" : [
+	{"tim" : "Sporting Libson", "tahun" : "2001"},
+	{"tim" : "MU", "tahun" : "2003"},
+	{"tim" : "Real Madrid", "tahun" : "2008"}
+	]
+}
